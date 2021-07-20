@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "crafting",
+    "path": "folders/Objects/crafting.yy",
   },
   "resourceVersion": "1.0",
   "name": "usable_item_obj",
