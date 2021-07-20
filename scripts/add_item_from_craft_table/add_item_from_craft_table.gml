@@ -15,9 +15,11 @@ function add_item_from_craft_table(){
 	}
 	
 	ds_list_remove_instance(inventory_obj.ingredients, first_ingredient);
+	disentangle_ingredient_from_holder(first_ingredient);
 	with(first_ingredient){
 		instance_destroy();
 	}
+	update_inventory_state();
 	
 	ds_list_add(inventory_obj.items, item_inst);
 	show_debug_message("item inventory length: " + string(ds_list_size(inventory_obj.items)))

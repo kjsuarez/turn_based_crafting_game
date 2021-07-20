@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-click_ready = true;
+click_ready = false;
