@@ -21,6 +21,7 @@ switch (keyboard_key){
 		break;
 	default: new_position = [x,y];
 }
+
 var lay_id = layer_get_id("base_tiles_layer");
 var map_id = layer_tilemap_get_id(lay_id);
 var new_tile_row = tilemap_get_cell_x_at_pixel(map_id, new_position[0], new_position[1]);
@@ -36,5 +37,9 @@ if(place_meeting(new_position[0], new_position[1], resource_obj)){
 	instance_destroy(resource_inst);
 }
 
-x = new_position[0];
-y = new_position[1];
+target_position[0] = new_position[0];
+target_position[1] = new_position[1];
+
+advance_turn();
+
+

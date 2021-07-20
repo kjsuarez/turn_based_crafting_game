@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "player_front_spr",
-    "path": "sprites/player_front_spr/player_front_spr.yy",
+    "name": "skull_enemy_spr",
+    "path": "sprites/skull_enemy_spr/skull_enemy_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":1,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -35,7 +33,7 @@
     "path": "folders/Objects/actors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "player_obj",
+  "name": "enemy_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
