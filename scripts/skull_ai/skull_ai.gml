@@ -1,8 +1,6 @@
 // called from enemy's context
 function skull_next_position(){
-	var x_delta = irandom_range(-1, 1);
-	var y_delta = irandom_range(-1, 1);	
-	var new_position = adjusted_position_by_x_tiles(x_delta, y_delta, x, y);
+	var new_position = one_cardinal_tile_over();
 	return new_position
 }
 
@@ -29,6 +27,7 @@ function skull_behavior(){
 			target_position[1] = new_position[1];
 		} else {
 			preparing_attack = true;
+			
 			sprite_index = charging_skull_spr;
 		}
 	}				

@@ -53,6 +53,7 @@ switch (intended_action){
 			}
 		}
 		advance_turn();
+		
 		break;
 	case "move":
 		var lay_id = layer_get_id("base_tiles_layer");
@@ -82,16 +83,9 @@ switch (intended_action){
 		target_position[1] = new_position[1];
 
 		advance_turn();
+		
 		break;
 
 	default:
 
 }
-
-target_position[0] = new_position[0];
-target_position[1] = new_position[1];
-
-advance_turn();
-
-x = new_position[0];
-y = new_position[1];

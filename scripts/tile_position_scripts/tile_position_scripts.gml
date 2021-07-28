@@ -23,3 +23,14 @@ function adjusted_position_by_x_tiles(x_tiles_over, y_tiles_over, current_x, cur
 	var new_tile_pixel_position = tile_column_row_to_position(new_tile_row, new_tile_column);
 	return new_tile_pixel_position
 }
+
+function turn_collision(inst_1, inst_2){
+	var inst_1_current_tile = center_of_tile_at_position(inst_1.x, inst_1.y);
+	var inst_1_target_tile = center_of_tile_at_position(inst_1.target_position[0], inst_1.target_position[1]);
+	
+	var inst_2_current_tile = center_of_tile_at_position(inst_2.x, inst_2.y);
+	var inst_2_target_tile = center_of_tile_at_position(inst_2.target_position[0], inst_2.target_position[1]);
+
+	return array_equals(inst_1_target_tile, inst_2_target_tile) || (array_equals(inst_1_target_tile, inst_2_current_tile) && array_equals(inst_2_target_tile, inst_1_current_tile))
+	
+}
