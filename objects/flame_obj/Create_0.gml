@@ -4,4 +4,4 @@
 event_inherited();
 
 ttl = 2;
-decisioin_script = "enemy_behavior";
+decisioin_script = "fire_ball_behavior";

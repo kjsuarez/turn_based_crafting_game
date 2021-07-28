@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "hud",
+    "path": "folders/Objects/hud.yy",
   },
   "resourceVersion": "1.0",
   "name": "hud_item_obj",

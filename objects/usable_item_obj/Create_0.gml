@@ -8,6 +8,9 @@ grabbed = false;
 starting_position = [x,y];
 related_setter = false;
 //business attributes
-	//damage 
-	//effected_tiles
+player_effect = "spawn_dust_cloud";
+spawn_location = "cell_in_front_of_player";
+spawn_behavior = "move_ahead_one_step";
+impact_effect = "do_nothing";
+
 
