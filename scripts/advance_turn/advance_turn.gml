@@ -1,5 +1,5 @@
 function advance_turn(){
-	with(turn_taker_obj){
+	with(actor_obj){
 		if (self.id != player_obj.id){
 			
 			var behavior_script = asset_get_index(decisioin_script);

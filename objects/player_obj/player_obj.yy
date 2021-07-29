@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "turn_taker_obj",
-    "path": "objects/turn_taker_obj/turn_taker_obj.yy",
+    "name": "actor_obj",
+    "path": "objects/actor_obj/actor_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
