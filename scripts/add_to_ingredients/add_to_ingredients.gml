@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function add_to_ingredients(ingredient){
 	var x_pos = inventory.ingredients_list_start_coor[0];
 	var y_pos = inventory.ingredients_list_start_coor[1] * (ds_list_size(inventory.ingredients) + 1);

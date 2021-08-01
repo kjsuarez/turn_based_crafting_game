@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-ttl = 2;
+ttl = 5;
