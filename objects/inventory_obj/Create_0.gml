@@ -2,6 +2,8 @@
 inventory_open = false;
 
 ingredients = ds_list_create();
+complex_ingredients = ds_map_create();
+
 ingredients_list_start_coor = [32,32];
 ingredients_list_y_seperation = 32;
 items_list_start_coor = [(400 - 64),32];

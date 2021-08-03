@@ -28,3 +28,15 @@ function closest_cardinal_direction(origin_x, origin_y, dest_x, dest_y){
 	
 	return choice_coor;
 }
+
+function array_index_of_element(arry, element){
+	var index = undefined;
+	for (var i = 0; i < array_length(arry); i += 1){
+	    if (arry[i] == element){
+			index = i;
+	        break;
+	    }
+	    
+	}
+	return index;
+}

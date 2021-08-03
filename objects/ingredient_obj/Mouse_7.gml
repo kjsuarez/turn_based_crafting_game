@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Release grabbed inst.
 
 show_debug_message("mouse relaesed");
 var trait_holder_inst = instance_place(x, y, trait_holder_obj);
@@ -19,7 +19,10 @@ if(trait_holder_inst != noone && grabbed && trait_holder_inst.related_ingredient
 	
 	show_debug_message("button should be grey");
 	grabbed = false;
+	placed = false;
 	x = starting_position[0];
 	y = starting_position[1];
+	
+	add_to_complex_ingredients_hash(self);
 }
 

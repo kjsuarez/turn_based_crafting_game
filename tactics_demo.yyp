@@ -45,6 +45,7 @@
     {"id":{"name":"skull_enemy_spr","path":"sprites/skull_enemy_spr/skull_enemy_spr.yy",},"order":11,},
     {"id":{"name":"cursor_spr","path":"sprites/cursor_spr/cursor_spr.yy",},"order":1,},
     {"id":{"name":"text_box_spr","path":"sprites/text_box_spr/text_box_spr.yy",},"order":9,},
+    {"id":{"name":"inventory_scripts","path":"scripts/inventory_scripts/inventory_scripts.yy",},"order":14,},
     {"id":{"name":"lighting_spr","path":"sprites/lighting_spr/lighting_spr.yy",},"order":18,},
     {"id":{"name":"spawn_behaviors","path":"scripts/spawn_behaviors/spawn_behaviors.yy",},"order":0,},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":1,},

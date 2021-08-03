@@ -2,6 +2,7 @@
 
 visible = false;
 grabbed = false;
+placed = false;
 starting_position = [x,y];
 related_setter = false;
 //business attributes
