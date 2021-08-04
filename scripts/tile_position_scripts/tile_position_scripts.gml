@@ -34,3 +34,7 @@ function turn_collision(inst_1, inst_2){
 	return array_equals(inst_1_target_tile, inst_2_target_tile) || (array_equals(inst_1_target_tile, inst_2_current_tile) && array_equals(inst_2_target_tile, inst_1_current_tile))
 	
 }
+
+function max_room_column(){
+	
+}
