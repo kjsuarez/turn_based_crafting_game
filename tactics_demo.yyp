@@ -25,7 +25,6 @@
     {"id":{"name":"charging_skull_spr","path":"sprites/charging_skull_spr/charging_skull_spr.yy",},"order":14,},
     {"id":{"name":"player_front_spr","path":"sprites/player_front_spr/player_front_spr.yy",},"order":2,},
     {"id":{"name":"explosion_spr","path":"sprites/explosion_spr/explosion_spr.yy",},"order":13,},
-    {"id":{"name":"add_to_ingredients","path":"scripts/add_to_ingredients/add_to_ingredients.yy",},"order":2,},
     {"id":{"name":"item_button_obj","path":"objects/item_button_obj/item_button_obj.yy",},"order":2,},
     {"id":{"name":"flask_ingredient_spr","path":"sprites/flask_ingredient_spr/flask_ingredient_spr.yy",},"order":8,},
     {"id":{"name":"tile_position_scripts","path":"scripts/tile_position_scripts/tile_position_scripts.yy",},"order":0,},
