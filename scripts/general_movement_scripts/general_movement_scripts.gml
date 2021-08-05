@@ -1,6 +1,20 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function one_cardinal_tile_over(){
+function one_tile_closer_to_player(){
+	if( mp_grid_path(manager_obj.navigation_grid, ai_path, x, y, player_obj.x, player_obj.y, 0)){
+		//determine path length
+		var path_length = path_get_length(ai_path);
+		// devide path length by length of tile
+		var path_percentage = manager_obj.cell_length/path_length
+		
+		// advance along path this much (always 1/16?)
+		var path_step_coor = center_of_tile_at_position(path_get_x(ai_path, path_percentage), path_get_y(ai_path, path_percentage))//[path_get_x(ai_path, 0.0625), path_get_y(ai_path, 0.0625)]
+		return path_step_coor;
+	} else {
+		return one_random_cardinal_tile_over();
+	}
+		
+}
+
+function one_random_cardinal_tile_over(){
  var move_choice = irandom_range(0,3);
  var x_delta = 0;
  var y_delta = 0;

@@ -1,6 +1,6 @@
 // called from enemy's context
 function skull_next_position(){
-	var new_position = one_cardinal_tile_over();
+	var new_position = one_tile_closer_to_player(); //one_random_cardinal_tile_over();
 	return new_position
 }
 
@@ -8,6 +8,8 @@ function skull_behavior(){
 	standard_actor_behavior();
 	
 	if(preparing_attack){
+		reveal_path = false;
+		
 		sprite_index = skull_enemy_spr;
 		
 		var bullet_dir = closest_cardinal_direction(x, y, player_obj.x, player_obj.y);
@@ -20,12 +22,15 @@ function skull_behavior(){
 		preparing_attack = false
 		
 	} else {
-		var choice = irandom_range(0, 1);
-		if(choice == 0){
+		
+		var choice = irandom_range(0, 3);
+		if(choice != 0){
 			var new_position = skull_next_position()
 			target_position[0] = new_position[0];
 			target_position[1] = new_position[1];
+			reveal_path = true;
 		} else {
+			reveal_path = false;
 			preparing_attack = true;
 			
 			sprite_index = charging_skull_spr;

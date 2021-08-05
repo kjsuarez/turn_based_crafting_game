@@ -13,3 +13,12 @@ function equip_item(item_inst) {
 	}
 	item_inst.hud_element = hud_item_inst;
 }
+
+function equip_next_item(){
+
+}
+
+function equip_previous_item(){
+
+
+}
