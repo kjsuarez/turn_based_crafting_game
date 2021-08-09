@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "skull_enemy_spr",
-    "path": "sprites/skull_enemy_spr/skull_enemy_spr.yy",
+    "name": "skull_2_spr",
+    "path": "sprites/skull_2_spr/skull_2_spr.yy",
   },
   "solid": false,
   "visible": true,

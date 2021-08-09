@@ -28,6 +28,18 @@ if(manager_obj.state == "neutral"){
 			facing = [0, 1];
 		    var new_position = adjusted_position_by_x_tiles(facing[0], facing[1], x, y);
 		    break;
+		case ord("Q"):
+			var item_inventory_length = ds_list_size(inventory_obj.items);
+			if(item_inventory_length > 1){
+				equip_previous_item();
+			}
+			break;
+		case ord("E"):
+			var item_inventory_length = ds_list_size(inventory_obj.items);
+			if(item_inventory_length > 1){
+				equip_next_item();
+			}
+			break;
 		case vk_space:
 			intended_action = "use_item";
 			break;

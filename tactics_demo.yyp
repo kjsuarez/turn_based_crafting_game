@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"skull_2_spr","path":"sprites/skull_2_spr/skull_2_spr.yy",},"order":19,},
     {"id":{"name":"hp_bar_obj","path":"objects/hp_bar_obj/hp_bar_obj.yy",},"order":1,},
     {"id":{"name":"lightning_obj","path":"objects/lightning_obj/lightning_obj.yy",},"order":5,},
     {"id":{"name":"hide_on_tab_obj","path":"objects/hide_on_tab_obj/hide_on_tab_obj.yy",},"order":10,},

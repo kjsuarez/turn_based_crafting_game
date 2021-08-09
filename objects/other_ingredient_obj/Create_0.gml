@@ -2,7 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
-item_sprite = skull_enemy_spr;
+item_sprite = skull_2_spr;
 player_effect = "spawn_lightning";
 player_effect_description = "Creates a bolt of lightning.";
 
