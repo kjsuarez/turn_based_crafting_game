@@ -25,4 +25,4 @@ if(transitioning){
 	draw_sprite_part(sprite_index, image_index, 0, 0, sprite_width, sprite_height, x, y );
 }
 
-draw_sprite(cursor_spr, -1, 0, 0, sprite_width, sprite_height, x, y );
+draw_sprite_part(cursor_spr, -1, 0, 0, sprite_width, sprite_height, x, y );

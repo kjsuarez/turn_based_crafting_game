@@ -4,8 +4,10 @@
     {"id":{"name":"hp_bar_obj","path":"objects/hp_bar_obj/hp_bar_obj.yy",},"order":1,},
     {"id":{"name":"lightning_obj","path":"objects/lightning_obj/lightning_obj.yy",},"order":5,},
     {"id":{"name":"hide_on_tab_obj","path":"objects/hide_on_tab_obj/hide_on_tab_obj.yy",},"order":10,},
+    {"id":{"name":"ground_tiles","path":"tilesets/ground_tiles/ground_tiles.yy",},"order":2,},
     {"id":{"name":"add_item_from_craft_table","path":"scripts/add_item_from_craft_table/add_item_from_craft_table.yy",},"order":5,},
     {"id":{"name":"array_remove_instance","path":"scripts/array_remove_instance/array_remove_instance.yy",},"order":6,},
+    {"id":{"name":"ground_tiles_spr","path":"sprites/ground_tiles_spr/ground_tiles_spr.yy",},"order":2,},
     {"id":{"name":"actor_behaviors","path":"scripts/actor_behaviors/actor_behaviors.yy",},"order":0,},
     {"id":{"name":"open_inventory","path":"scripts/open_inventory/open_inventory.yy",},"order":1,},
     {"id":{"name":"rock_resource_obj","path":"objects/rock_resource_obj/rock_resource_obj.yy",},"order":2,},
@@ -19,6 +21,7 @@
     {"id":{"name":"general_movement_scripts","path":"scripts/general_movement_scripts/general_movement_scripts.yy",},"order":3,},
     {"id":{"name":"item_scripts","path":"scripts/item_scripts/item_scripts.yy",},"order":9,},
     {"id":{"name":"hud_item_obj","path":"objects/hud_item_obj/hud_item_obj.yy",},"order":0,},
+    {"id":{"name":"small_room","path":"rooms/small_room/small_room.yy",},"order":1,},
     {"id":{"name":"boundries_spr","path":"sprites/boundries_spr/boundries_spr.yy",},"order":1,},
     {"id":{"name":"trait_holder_obj","path":"objects/trait_holder_obj/trait_holder_obj.yy",},"order":7,},
     {"id":{"name":"dust_spr","path":"sprites/dust_spr/dust_spr.yy",},"order":17,},
@@ -80,6 +83,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"small_room","path":"rooms/small_room/small_room.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
