@@ -42,6 +42,7 @@ function equip_next_item(){
 		}
 		next_sprite = target_item.sprite_index;
 		transitioning = true;
+		transition_dir = -1;
 	}
 }
 
@@ -54,5 +55,15 @@ function equip_previous_item(){
 		var target_item = inventory_obj.items[| equiped_index - 1]
 	}
 	
-	equip_item(target_item);
+	//equip_item(target_item);
+	player_obj.equiped_item = target_item;
+	with(hud_item_obj){
+		if(transitioning){
+			sprite_index = next_sprite;
+			trans_val = 0;
+		}
+		next_sprite = target_item.sprite_index;
+		transitioning = true;
+		transition_dir = 1;
+	}
 }
