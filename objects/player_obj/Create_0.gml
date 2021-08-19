@@ -3,6 +3,7 @@
 event_inherited();
 
 facing = [0, 1];
+facing_sprite_index = 0;
 
 inventory = instance_create_layer(0,0, "meta_layer", inventory_obj);//ds_list_create();
 equiped_item = false;

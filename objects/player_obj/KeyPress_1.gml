@@ -80,8 +80,14 @@ if(manager_obj.state == "neutral"){
 			var collision_tile_index = tilemap_get_at_pixel(collision_tiles, new_position[0], new_position[1]);
 
 			show_debug_message("tile index: " + string(collision_tile_index))
-
-			if((new_tile_row == -1 || new_tile_column ==  -1 ) || (collision_tile_index == 1)){
+			
+			var actors_in_this_space = actors_that_intend_to_occupy_this_tile(new_position)
+			
+			if(
+				(new_tile_row == -1 || new_tile_column ==  -1 ) || 
+				(collision_tile_index == 1) ||
+				ds_list_size(actors_in_this_space) > 0
+			){
 				new_position = [x,y];
 			}
 

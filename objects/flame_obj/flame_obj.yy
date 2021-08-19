@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "flame_spr",
-    "path": "sprites/flame_spr/flame_spr.yy",
+    "name": "fire_ball_spr",
+    "path": "sprites/fire_ball_spr/fire_ball_spr.yy",
   },
   "solid": false,
   "visible": true,

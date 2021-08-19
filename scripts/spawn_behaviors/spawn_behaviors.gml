@@ -4,7 +4,7 @@ function spawn_actor(actor_object){
 	var actor_inst = instance_create_layer(spawn_coor[0], spawn_coor[1], "instance_layer", actor_object);
 	with(actor_inst){
 		direction_coor = player_obj.facing;
-		decisioin_script = other.spawn_behavior;
+		decision_script = other.spawn_behavior;
 		impact_effect = other.impact_effect
 	}
 }

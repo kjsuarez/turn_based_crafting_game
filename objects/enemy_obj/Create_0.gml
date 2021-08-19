@@ -8,4 +8,4 @@ image_yscale = 2;
 
 moves = true;
 preparing_attack = false;
-decisioin_script = "skull_behavior";
+decision_script = "skull_behavior";
