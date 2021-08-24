@@ -29,15 +29,24 @@ switch (direction_coor[0]){
 	break;
 	default:
 		break;
+}
+ 
+ /*
+ 
+ if(will_collide && array_equals([x,y], target_position)){
+	will_collide = false;
+	colliding = true;
+	sprite_index = collision_sprite;
+	image_angle = 0
  }
  
+ if(colliding){
+	 image_angle = 0
+	  if( image_index >= image_number - 1){
+		collision_script = asset_get_index(collision_script_name)
+		script_execute(collision_script)
+	 }
+ }
 
-/*
-if(turn_collision(self, player_obj)){
-	with(player_obj.hp_bar){
-		hp -= 1;
-		image_xscale = hp;
-	}
-	instance_destroy();
-}
+
 */

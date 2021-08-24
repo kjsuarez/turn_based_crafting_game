@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+team = "player";
+opposite_team = "enemy";
 
 grabbed = false;
 starting_position = [x,y];

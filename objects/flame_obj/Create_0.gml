@@ -2,7 +2,8 @@
 
 // Inherit the parent event
 event_inherited();
-is_bullet = true;
+
 ttl = 5;
 decision_script = "fire_ball_behavior";
-direction_coor = [0,-1];
+collision_script_name = "animate_and_do_damage"
+collision_sprite = flame_fx_spr

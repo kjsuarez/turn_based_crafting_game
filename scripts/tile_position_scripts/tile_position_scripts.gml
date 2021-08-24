@@ -39,7 +39,7 @@ function actors_that_intend_to_occupy_this_tile(tile_coor){
 	var instances = ds_list_create()
 	with(actor_obj){
 		if(array_equals(target_position, tile_coor)){
-			ds_list_add(instances, self)
+			ds_list_add(instances, self.id)
 		}
 	}
 	return instances

@@ -14,7 +14,7 @@ function skull_behavior(){
 		
 		var bullet_dir = closest_cardinal_direction(x, y, player_obj.x, player_obj.y);
 		var bullet_possition = adjusted_position_by_x_tiles(bullet_dir[0], bullet_dir[1], x, y);
-		var flamy_boy = instance_create_layer(bullet_possition[0],bullet_possition[1],"instance_layer",flame_obj);
+		var flamy_boy = instance_create_layer(bullet_possition[0],bullet_possition[1],"bullet_layer",flame_obj);
 		
 		with(flamy_boy){
 			direction_coor = bullet_dir;

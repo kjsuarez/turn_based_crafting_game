@@ -40,3 +40,11 @@ function array_index_of_element(arry, element){
 	}
 	return index;
 }
+
+function team_inverse(team_str){
+	if(team_str == "player"){
+		return "enemy"
+	} else {
+		return "player"
+	}
+}
