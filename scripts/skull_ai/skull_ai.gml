@@ -1,7 +1,12 @@
 // called from enemy's context
 function skull_next_position(){
-	var new_position = one_tile_closer_to_player(); //one_random_cardinal_tile_over();
-	return new_position
+	if(!preparing_attack){
+		var new_position = one_tile_closer_to_player(); //one_random_cardinal_tile_over();
+		return new_position
+	} else {
+		return [x,y];
+	}
+	
 }
 
 function skull_behavior(){

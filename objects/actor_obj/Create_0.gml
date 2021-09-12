@@ -1,5 +1,7 @@
 team = "enemy"
 opposite_team = "player"
+experiences_knockback = true;
+
 
 flub_val = 0.05
 

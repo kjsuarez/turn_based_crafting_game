@@ -45,6 +45,19 @@ function actors_that_intend_to_occupy_this_tile(tile_coor){
 	return instances
 }
 
+function actors_with_this_value_at_this_var(tile_coor, variable_name){
+	var instances = ds_list_create()
+	with(actor_obj){
+		var variable_contents = variable_instance_get(self, variable_name)
+		if (is_array(variable_contents)){
+			if(array_equals(variable_contents, tile_coor)){
+				ds_list_add(instances, self.id)
+			}
+		}
+	}
+	return instances
+}
+
 function max_room_column(){
 	
 }
