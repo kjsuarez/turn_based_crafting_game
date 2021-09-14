@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "base_enemy_spr",
-    "path": "sprites/base_enemy_spr/base_enemy_spr.yy",
+    "name": "larva_idle_spr",
+    "path": "sprites/larva_idle_spr/larva_idle_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "actor_obj",
-    "path": "objects/actor_obj/actor_obj.yy",
+    "name": "enemy_obj",
+    "path": "objects/enemy_obj/enemy_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,15 +25,18 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [],
+  "properties": [
+    {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"variable_name","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "actors",
     "path": "folders/Objects/actors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemy_obj",
+  "name": "walker_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

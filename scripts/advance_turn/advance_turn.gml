@@ -19,7 +19,7 @@ function advance_turn(){
 			for (var i = 0; i < ds_list_size(actors_in_this_space); i += 1){
 				var would_be_collider = actors_in_this_space[|i];
 		
-				if(id != would_be_collider.id && would_be_collider.team == opposite_team){
+				if(id != would_be_collider.id ){
 					will_collide = true;
 					ds_list_add(collision_targets, would_be_collider);
 			
@@ -74,7 +74,8 @@ function set_colliders_for_resolved_coor(){
 				for (var i = 0; i < ds_list_size(actors_in_this_space); i += 1){
 					var would_be_collider = actors_in_this_space[|i];
 		
-					if(id != would_be_collider.id && would_be_collider.team == opposite_team){
+					if(id != would_be_collider.id){
+						
 						will_collide = true;
 						ds_list_add(collision_targets, would_be_collider);
 			
@@ -85,6 +86,7 @@ function set_colliders_for_resolved_coor(){
 				
 				//if you now have colliders, set your resolved_coor and let the other obj know that you found colliders
 				if(ds_list_size(colliders) > 0){
+					resolved_coor = experiences_knockback ? [x,y] : desired_coor;
 					found_colliders = true
 				}	
 			}	

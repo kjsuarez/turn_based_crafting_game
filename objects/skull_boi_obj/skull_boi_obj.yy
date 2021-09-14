@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "base_enemy_spr",
-    "path": "sprites/base_enemy_spr/base_enemy_spr.yy",
+    "name": "skull_enemy_spr",
+    "path": "sprites/skull_enemy_spr/skull_enemy_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "actor_obj",
-    "path": "objects/actor_obj/actor_obj.yy",
+    "name": "enemy_obj",
+    "path": "objects/enemy_obj/enemy_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +34,7 @@
     "path": "folders/Objects/actors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemy_obj",
+  "name": "skull_boi_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
