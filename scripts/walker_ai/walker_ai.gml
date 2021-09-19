@@ -11,4 +11,8 @@ function walker_behavior(){
 	var new_position = walker_next_position()
 	target_position[0] = new_position[0];
 	target_position[1] = new_position[1];
+	
+	desired_coor = [x,y];
+	turn_intention = false;
+	desired_coor = new_position;
 }

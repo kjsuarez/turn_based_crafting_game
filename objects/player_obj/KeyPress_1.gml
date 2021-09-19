@@ -86,8 +86,8 @@ if(manager_obj.state == "neutral"){
 			
 			if(
 				(new_tile_row == -1 || new_tile_column ==  -1 ) || 
-				(collision_tile_index == 1) ||
-				ds_list_size(actors_in_this_space) > 0
+				(collision_tile_index == 1) 
+				//|| ds_list_size(actors_in_this_space) > 0
 			){
 				new_position = [x,y];
 			}
@@ -102,6 +102,7 @@ if(manager_obj.state == "neutral"){
 
 			target_position[0] = new_position[0];
 			target_position[1] = new_position[1];
+			desired_coor = target_position;
 
 			advance_turn();
 		

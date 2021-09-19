@@ -60,3 +60,9 @@ function layer_at_position(layer_name, tile_position){
 	return (layer_tile_index == 1)
 
 }
+
+function halfway_between(point_a, point_b){
+	var new_x = (point_a[0] + ceil((point_b[0] - point_a[0])/2))
+	var new_y = (point_a[1] + ceil((point_b[1] - point_a[1])/2))
+	return [new_x, new_y];
+}

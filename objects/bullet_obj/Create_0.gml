@@ -15,4 +15,5 @@ collision_sprite = flame_fx_spr
 direction_coor = [0,-1];
 targets = ds_list_create();
 
+desired_coor = [x,y]
 handle_bullet_collision([x,y])

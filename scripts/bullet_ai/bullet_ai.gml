@@ -10,7 +10,9 @@ function bullet_behavior(){
 	target_position[0] = new_position[0];
 	target_position[1] = new_position[1];
 	
-	handle_bullet_collision(new_position)
+	desired_coor = [x,y];
+	desired_coor = new_position;
+	//handle_bullet_collision(new_position)
 }
 
 function handle_bullet_collision(coor_array){

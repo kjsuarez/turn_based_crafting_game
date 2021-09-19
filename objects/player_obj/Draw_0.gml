@@ -29,4 +29,6 @@ switch (facing[0]){
  }
  
  
-draw_sprite(sprite_index, facing_sprite_index, x, y);
+if(!blinking || !blink_on){
+	draw_sprite(sprite_index, facing_sprite_index, x, y);
+} 

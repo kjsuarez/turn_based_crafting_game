@@ -8,3 +8,4 @@ var lay_id = layer_get_id("boundry_tiles_layer");
 var tile_map_id = layer_tilemap_get_id(lay_id);
 cell_length = tilemap_get_tile_width(tile_map_id);
 
+turn_check_speed = 10;

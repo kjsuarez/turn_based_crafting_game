@@ -1,3 +1,4 @@
+/// @description Insert description here
 /// @description Draw static sprite for facing direction
 
 
@@ -35,9 +36,7 @@ if(!blinking || !blink_on){
 
 
 
-/*
 if(x != target_position[0] || y != target_position[1]){
 	draw_set_color(c_red);
 	draw_circle(x,y,5,false);
 }
-*/

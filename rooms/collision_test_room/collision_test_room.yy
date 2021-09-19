@@ -32,6 +32,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"walker_obj","path":"objects/walker_obj/walker_obj.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":184.0,"y":88.0,"resourceVersion":"1.0","name":"inst_684B983A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"walker_obj","path":"objects/walker_obj/walker_obj.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":152.0,"y":72.0,"resourceVersion":"1.0","name":"inst_31A16893","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"walker_obj","path":"objects/walker_obj/walker_obj.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":136.0,"y":72.0,"resourceVersion":"1.0","name":"inst_486E6C15","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"shooter_obj","path":"objects/shooter_obj/shooter_obj.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":296.0,"y":136.0,"resourceVersion":"1.0","name":"inst_4EB3DCBA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"instance_layer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"boudry_tiles","path":"tilesets/boudry_tiles/boudry_tiles.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":25,"SerialiseHeight":19,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -93,6 +94,7 @@
     {"name":"inst_684B983A","path":"rooms/collision_test_room/collision_test_room.yy",},
     {"name":"inst_31A16893","path":"rooms/collision_test_room/collision_test_room.yy",},
     {"name":"inst_486E6C15","path":"rooms/collision_test_room/collision_test_room.yy",},
+    {"name":"inst_4EB3DCBA","path":"rooms/collision_test_room/collision_test_room.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

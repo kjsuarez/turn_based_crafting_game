@@ -2,9 +2,9 @@
 
 // Inherit the parent event
 event_inherited();
+var collider_count = ds_list_size(colliders)
 
- if(will_collide && array_equals([x,y], target_position)){
-	will_collide = false;
+ if(collider_count > 0 && colliding == false && array_equals([x,y], target_position)){
 	colliding = true;
 	sprite_index = collision_sprite;
 	image_angle = 0

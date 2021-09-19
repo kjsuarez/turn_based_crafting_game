@@ -3,16 +3,27 @@ function advance_turn(){
 	with(actor_obj){
 		if (self.id != player_obj.id){	
 			// set your desired_coor 
+			/*
 			desired_coor = [x,y];
 			turn_intention = false;
 			var position_script_name = asset_get_index(position_script);
 			desired_coor = script_execute(position_script_name);
-			//set your 'turn_intention' flag (move, act, nothing)
+			*/
+			
+			var behavior_script = asset_get_index(decision_script);
+			script_execute(behavior_script)
+			if (!variable_instance_exists(id, "desired_coor")){
+				desired_coor = [x,y];
+			} 
+			
+			if(!is_array(desired_coor)){
+				desired_coor = [x,y];
+			}
 		}
 	}
 	
 	with(actor_obj){
-		if (self.id != player_obj.id){
+		//if (self.id != player_obj.id){
 			// use the above to populate a colliders array
 			var actors_in_this_space = actors_with_this_value_at_this_var(desired_coor, "desired_coor")
 			var collision_targets = ds_list_create();
@@ -31,7 +42,7 @@ function advance_turn(){
 			if(ds_list_size(colliders) > 0){
 				resolved_coor = experiences_knockback ? [x,y] : desired_coor;
 			}		
-		}
+		//}
 
 	}
 	
@@ -51,22 +62,28 @@ function advance_turn(){
 	
 		
 	with(actor_obj){
-		if (self.id != player_obj.id){			
-			var behavior_script = asset_get_index(decision_script);
-			script_execute(behavior_script)
+		//if (self.id != player_obj.id){			
+			//var behavior_script = asset_get_index(decision_script);
+			//script_execute(behavior_script)
 			
 			if(is_bullet && out_of_bounds()){
 				instance_destroy();
 			}
-		}
+		//}
 	}
+	
+	with(manager_obj){
+		state = "acting"
+		alarm[0] = turn_check_speed;
+	}
+	
 	
 }
 
 function set_colliders_for_resolved_coor(){
 	var found_colliders = false;
 	with(actor_obj){
-		if (self.id != player_obj.id){
+		//if (self.id != player_obj.id){
 			// If you don't have colliders, determine colliders based on resolved_coor instead of desired_coor
 			if(ds_list_size(colliders) == 0){
 				var actors_in_this_space = actors_with_this_value_at_this_var(desired_coor, "resolved_coor")
@@ -90,7 +107,7 @@ function set_colliders_for_resolved_coor(){
 					found_colliders = true
 				}	
 			}	
-		}
+		//}
 		
 	}
 	return found_colliders;
