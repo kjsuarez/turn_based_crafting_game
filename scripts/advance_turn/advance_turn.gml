@@ -1,17 +1,11 @@
 function advance_turn(){
 
 	with(actor_obj){
-		if (self.id != player_obj.id){	
-			// set your desired_coor 
-			/*
-			desired_coor = [x,y];
-			turn_intention = false;
-			var position_script_name = asset_get_index(position_script);
-			desired_coor = script_execute(position_script_name);
-			*/
+			if (self.id != player_obj.id ){				
+				var behavior_script = asset_get_index(decision_script);
+				script_execute(behavior_script)
+			}
 			
-			var behavior_script = asset_get_index(decision_script);
-			script_execute(behavior_script)
 			if (!variable_instance_exists(id, "desired_coor")){
 				desired_coor = [x,y];
 			} 
@@ -20,7 +14,7 @@ function advance_turn(){
 				desired_coor = [x,y];
 			}
 		}
-	}
+	
 	
 	with(actor_obj){
 		//if (self.id != player_obj.id){

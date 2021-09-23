@@ -70,14 +70,17 @@ function actors_intersecting_this_path(start_coor, end_coor){
 		}
 		*/
 		//
-		if(is_array(desired_coor)){
-			if(array_equals(desired_coor, start_coor) && array_equals([x,y], end_coor)){
-				ds_list_add(instances, self.id)
-			} else if(array_equals(desired_coor, end_coor)){
-				ds_list_add(instances, self.id)
-			}
+		if(variable_struct_exists(self, "desired_coor")){
+			if(is_array(desired_coor)){
+				if(array_equals(desired_coor, start_coor) && array_equals([x,y], end_coor)){
+					ds_list_add(instances, self.id)
+				} else if(array_equals(desired_coor, end_coor)){
+					ds_list_add(instances, self.id)
+				}
 		
-		} 
+			}		
+		}
+ 
 		
 		
 	}
