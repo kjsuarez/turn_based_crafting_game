@@ -15,3 +15,8 @@ function animate_and_do_damage(){
 	instance_destroy();
 	
 }
+
+function reverse_direction(){
+	facing[0] = facing[0] * -1;
+	facing[1] = facing[1] * -1;
+}

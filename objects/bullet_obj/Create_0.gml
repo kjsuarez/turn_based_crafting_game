@@ -4,6 +4,7 @@
 event_inherited();
 
 is_bullet = true;
+overrides_collision = true;
 will_collide = false;
 colliding = false;
 experiences_knockback = false;

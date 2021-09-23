@@ -25,7 +25,10 @@ function advance_turn(){
 	with(actor_obj){
 		//if (self.id != player_obj.id){
 			// use the above to populate a colliders array
-			var actors_in_this_space = actors_with_this_value_at_this_var(desired_coor, "desired_coor")
+			
+			//var actors_in_this_space = actors_with_this_value_at_this_var(desired_coor, "desired_coor")
+			var actors_in_this_space = actors_intersecting_this_path([x,y], desired_coor)
+			
 			var collision_targets = ds_list_create();
 			for (var i = 0; i < ds_list_size(actors_in_this_space); i += 1){
 				var would_be_collider = actors_in_this_space[|i];
@@ -38,6 +41,15 @@ function advance_turn(){
 				}
 			}
 			colliders = collision_targets;
+			
+			if(is_array(desired_coor)){
+				if(array_length(desired_coor) == 2){
+					if(layer_at_position("boundry_tiles_layer" , desired_coor)){
+						ds_list_add(colliders, "wall")
+					}
+				}
+			}
+			
 			// If you have colliders, determine your final position and assign it to resolved_coor
 			if(ds_list_size(colliders) > 0){
 				resolved_coor = experiences_knockback ? [x,y] : desired_coor;
@@ -71,7 +83,7 @@ function advance_turn(){
 			}
 		//}
 	}
-	
+  	
 	with(manager_obj){
 		state = "acting"
 		alarm[0] = turn_check_speed;

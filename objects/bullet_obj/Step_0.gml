@@ -11,6 +11,7 @@ var collider_count = ds_list_size(colliders)
  }
  
  if(colliding){
+	 colliding = false;
 	 image_angle = 0
 	  if( image_index >= image_number - 1){
 		collision_script = asset_get_index(collision_script_name)

@@ -57,6 +57,17 @@ if(experiences_knockback && collider_count > 0){
 			blinking = false;
 			blink_counter = 0;
 			colliders = ds_list_create();
+			
+			
+			if(variable_instance_exists(self, "collision_script_name") && !overrides_collision){
+				collision_script = asset_get_index(collision_script_name)
+		
+				script_execute(collision_script)
+				 
+			}	
+			experienced_collision = true;
+			acting = false;
+			
 		}
 	}
 
@@ -75,6 +86,40 @@ if(experiences_knockback && collider_count > 0){
 		){
 			x = target_position[0]
 			y = target_position[1]
+			
+			if(variable_instance_exists(self, "collision_script_name") && !overrides_collision && collider_count > 0){
+				collision_script = asset_get_index(collision_script_name)
+		
+				script_execute(collision_script)
+			}
 		}
 	}
 }
+
+
+
+
+/*
+if(variable_instance_exists(self, "collision_script_name") && !overrides_collision){
+	 if(collider_count > 0 && colliding == false && array_equals([x,y], target_position)){
+		colliding = true;
+
+	 }
+ 
+	 if(colliding){
+		colliding = false;
+		//colliders = ds_list_create();
+		collision_script = asset_get_index(collision_script_name)
+		
+		script_execute(collision_script)
+	 }
+}
+
+*/
+
+
+
+
+
+
+

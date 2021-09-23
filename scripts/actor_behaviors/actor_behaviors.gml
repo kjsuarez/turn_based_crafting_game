@@ -1,4 +1,7 @@
 function standard_actor_behavior(){
+	resolved_coor = [];
+	desired_coor = [];
+	experienced_collision = false;
 	experience_ttl();
 }
 

@@ -51,7 +51,7 @@ function team_inverse(team_str){
 
 
 
-function layer_at_position(layer_name, tile_position){
+function layer_at_position(layer_name, tile_position){	
 	var layer_in_question = layer_get_id(layer_name);
 	var layer_tiles = layer_tilemap_get_id(layer_in_question);
 	var layer_tile_index = tilemap_get_at_pixel(layer_tiles, tile_position[0], tile_position[1]);

@@ -1,8 +1,9 @@
 // called from enemy's context
 function walker_next_position(){
+	standard_actor_behavior();
 	var new_position = adjusted_position_by_x_tiles(facing[0], facing[1], x, y);
 	if(layer_at_position("boundry_tiles_layer" , new_position)){
-		new_position = [x,y]
+		//new_position = [x,y]
 	}
 	return new_position
 }

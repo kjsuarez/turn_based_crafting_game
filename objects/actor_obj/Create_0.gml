@@ -1,8 +1,12 @@
 colliders = ds_list_create();
 
+experienced_collision = false;
 team = "enemy"
 opposite_team = "player"
+will_collide = false;
+colliding = false;
 experiences_knockback = true;
+overrides_collision = false;
 
 
 flub_val = 0.05

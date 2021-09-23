@@ -58,6 +58,32 @@ function actors_with_this_value_at_this_var(tile_coor, variable_name){
 	return instances
 }
 
+function actors_intersecting_this_path(start_coor, end_coor){
+	var instances = ds_list_create()
+	with(actor_obj){
+		/*
+		var variable_contents = variable_instance_get(self, variable_name)
+		if (is_array(variable_contents)){
+			if(array_equals(variable_contents, tile_coor)){
+				ds_list_add(instances, self.id)
+			}
+		}
+		*/
+		//
+		if(is_array(desired_coor)){
+			if(array_equals(desired_coor, start_coor) && array_equals([x,y], end_coor)){
+				ds_list_add(instances, self.id)
+			} else if(array_equals(desired_coor, end_coor)){
+				ds_list_add(instances, self.id)
+			}
+		
+		} 
+		
+		
+	}
+	return instances
+}
+
 function max_room_column(){
 	
 }
