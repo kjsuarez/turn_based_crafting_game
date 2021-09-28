@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "meta_objects",
+    "path": "folders/Objects/meta_objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "manager_obj",

@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "rock_spr",
+    "path": "sprites/rock_spr/rock_spr.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "actor_obj",
+    "path": "objects/actor_obj/actor_obj.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,18 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":9,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "meta_objects",
-    "path": "folders/Objects/meta_objects.yy",
+    "name": "actors",
+    "path": "folders/Objects/actors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "hide_on_tab_obj",
+  "name": "rock_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

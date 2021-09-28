@@ -9,6 +9,9 @@ experiences_knockback = true;
 overrides_collision = false;
 
 
+decision_script = "do_nothing"
+
+
 flub_val = 0.05
 half_stepping = false;
 blink_length_counter = 0;
